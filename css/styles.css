@@ -88,9 +88,9 @@ nav {
 nav ul {
     flex: 1 1 40rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
-
+    flex-wrap: wrap;
 }
 
 #home {
@@ -265,7 +265,7 @@ form {
     resize: none;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    border: 0;		
+    border: 0;
 }
 
 .form-wrapper button {
@@ -280,6 +280,7 @@ form {
 footer {
     background: #131c27;
     color: white;
+    padding-bottom: 2rem;
 }
 
 .footer-container {
@@ -321,6 +322,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -344,6 +346,14 @@ footer {
     #home {
         padding: 2rem;
     }
+
+    .footer-logo {
+        margin: 3rem;
+    }
+
+    .footer-text {
+        margin-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: 592px) {
@@ -366,6 +376,46 @@ footer {
 
     .main-head {
         z-index: 1;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    html {
+        font-size: 30%;
+    }
+
+    .cards img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .card {
+        min-width: 30rem;
+        min-height: 10rem;
+    }
+
+    .footer-text ul li {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 285px) {
+    html {
+        font-size: 25%;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    html {
+        font-size: 20%;
     }
 }
 
