@@ -436,3 +436,5 @@ footer {
         background: rgb(8, 24, 58);
     }
 }
+
+#loadOverlay{display: none;}
