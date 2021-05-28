@@ -1,0 +1,387 @@
+
+/*Global Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+li, button, label, input, p {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h4, h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    color: white;
+    border: 0;
+    background: #2d3f55;
+    padding: 1.2rem 3rem;
+    margin: 1.1rem;
+    font-size: 1.8rem;
+    animation: buttonAnimation 2s infinite alternate;
+    transition: all 0.5s ease-in-out; 
+}
+
+button:hover {
+    background: #2c3f57;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+/*Header -->> Navbar and Introtext*/
+
+.main-head {
+    background-color: #131c27;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    flex: 1 1 40rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+#home {
+    flex: 2 1 10rem;
+    font-style: normal;
+}
+
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url('../images/blue-nile-falls.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.italicize {
+    font-style: italic;
+    font-size: 4rem;
+}
+
+/* Documentary */
+
+#documentary {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Ethiopia-landscape-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.documentary-text {
+    width: 95%;
+    margin: auto;
+    padding-top: 8rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.documentary-text p {
+    padding: 2rem 0;
+}
+
+.documentary-video {
+    flex: 1 1 40rem;
+    min-height: 60vh;
+    min-width: 50vw;
+}
+
+.doc-vid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.documentary-video-text {
+    flex: 2 1 40rem;
+    margin: 1.2rem;
+}
+
+iframe {
+    border: 0;
+}
+
+
+/*Meet The Team*/
+
+#meet-the-team {
+    min-height: 130vh;
+    width: 90vw;
+    margin: auto;
+}
+
+.meet-the-team-head {
+    padding: 2rem;
+    padding-top: 8rem;
+    min-height: 10vh;
+    text-align: center;
+}
+
+.cards {
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.card {
+    margin: 2rem 2rem;
+    min-width: 40rem;
+    min-height: 20rem;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.425);
+}
+
+.cards img {
+    height: 20rem;
+    width: 20rem;
+}
+
+
+/* Contact Us */
+#contact-us {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/contact-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    color: white;
+    min-width: 60vw;
+    border-radius: 3rem;
+}
+
+.form-header {
+    text-align: center;
+    padding: 3rem;
+}
+
+.form-header h2 {
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.name-form, .email-form, .message-form {
+    padding: 3.5rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    padding: 2rem;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+.message-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-wrapper textarea {
+    width: 60rem;
+	height: 12rem;
+	border: 3px solid #cccccc;
+	padding: 5px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    background: #131c27;
+    color: white;
+}
+
+.footer-container {
+    min-height: 15vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-logo ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    flex: 1 1 40rem;
+}
+
+.footer-text {
+    flex: 2 1 40rem;
+}
+
+.footer-logo img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.footer-text ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 40%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .cards img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    #home {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .vid-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 75%;
+    }
+
+    .documentary-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-head {
+        z-index: 1;
+    }
+}
+
+
+/* Button Animations */
+
+@keyframes buttonAnimation {
+    0%{
+        background: rgb(30, 110, 124);
+    }
+    25%{
+        background: rgb(59, 80, 128);
+    }
+    50%{
+        background: rgb(24, 38, 70);
+    }
+    100%{
+        background: rgb(8, 24, 58);
+    }
+}
